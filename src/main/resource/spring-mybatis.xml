@@ -11,5 +11,9 @@
         </property>
     </bean>
 
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="${driver}"/>
+        <property name="url" value="${url}"/>
+    </bean>
 
 </beans>
