@@ -8,9 +8,9 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/my")
 public class MyController {
     @RequestMapping("/index")
-    public String index(){
+    public ModelAndView index(){
         ModelAndView mv = new ModelAndView();
         mv.setViewName("index");
-        return "/jsp/index.jsp";
+        return mv;
     }
 }

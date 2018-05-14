@@ -12,8 +12,9 @@
     <mvc:annotation-driven/>
     <context:component-scan base-package="www.george.com.controller"/>
     <bean id="viewResolver"
-          class="org.springframework.web.servlet.view.InternalResourceView">
-        <constructor-arg name="url" value="/WEB-INF/jsp/index.jsp"/>
+                class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/" />
+        <property name="suffix" value=".jsp" />
     </bean>
 
     <!--<tx:annotation-driven/>-->
