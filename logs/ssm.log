@@ -2116,3 +2116,55 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 91; cvc-
 [INFO] [2018-05-14 16:24:25][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
 [INFO] [2018-05-14 16:24:25][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/my/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView www.george.com.controller.MyController.index()
 [INFO] [2018-05-14 16:24:25][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherTest': initialization completed in 1169 ms
+[INFO] [2018-05-15 13:28:21][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2018-05-15 13:28:21][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Tue May 15 13:28:21 CST 2018]; root of context hierarchy
+[INFO] [2018-05-15 13:28:21][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+[INFO] [2018-05-15 13:28:22][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2018-05-15 13:28:22][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-05-15 13:28:22][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 521 ms
+[INFO] [2018-05-15 13:28:22][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherTest': initialization started
+[INFO] [2018-05-15 13:28:22][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'dispatcherTest-servlet': startup date [Tue May 15 13:28:22 CST 2018]; parent: Root WebApplicationContext
+[INFO] [2018-05-15 13:28:22][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcherTest-servlet.xml]
+[INFO] [2018-05-15 13:28:23][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-05-15 13:28:23][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/my/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView www.george.com.controller.MyController.index()
+[INFO] [2018-05-15 13:28:23][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherTest': initialization completed in 1331 ms
+[INFO] [2018-05-17 15:45:29][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2018-05-17 15:45:29][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu May 17 15:45:29 CST 2018]; root of context hierarchy
+[INFO] [2018-05-17 15:45:29][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+[INFO] [2018-05-17 15:45:30][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2018-05-17 15:45:30][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-05-17 15:45:30][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 471 ms
+[INFO] [2018-05-17 15:45:30][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherTest': initialization started
+[INFO] [2018-05-17 15:45:30][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'dispatcherTest-servlet': startup date [Thu May 17 15:45:30 CST 2018]; parent: Root WebApplicationContext
+[INFO] [2018-05-17 15:45:30][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcherTest-servlet.xml]
+[INFO] [2018-05-17 15:45:31][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-05-17 15:45:31][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/params/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView www.george.com.controller.MyController.index()
+[INFO] [2018-05-17 15:45:31][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherTest': initialization completed in 1476 ms
+[WARN] [2018-05-17 15:48:35][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/ReciteWebApp/params/params/commonParams.do] in DispatcherServlet with name 'dispatcherTest'
+[WARN] [2018-05-17 16:08:21][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/ReciteWebApp/params/params/commonParams.do] in DispatcherServlet with name 'dispatcherTest'
+[INFO] [2018-05-17 17:57:00][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2018-05-17 17:57:00][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu May 17 17:57:00 CST 2018]; root of context hierarchy
+[INFO] [2018-05-17 17:57:00][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+[INFO] [2018-05-17 17:57:01][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2018-05-17 17:57:01][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-05-17 17:57:01][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 429 ms
+[INFO] [2018-05-17 17:57:01][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherTest': initialization started
+[INFO] [2018-05-17 17:57:01][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'dispatcherTest-servlet': startup date [Thu May 17 17:57:01 CST 2018]; parent: Root WebApplicationContext
+[INFO] [2018-05-17 17:57:01][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcherTest-servlet.xml]
+[INFO] [2018-05-17 17:57:02][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-05-17 17:57:02][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/params/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView www.george.com.controller.MyController.index()
+[INFO] [2018-05-17 17:57:02][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/params/submit],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView www.george.com.controller.MyController.submit(java.lang.String,java.lang.String)
+[INFO] [2018-05-17 17:57:02][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherTest': initialization completed in 1103 ms
+[INFO] [2018-05-17 18:03:39][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2018-05-17 18:03:39][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu May 17 18:03:39 CST 2018]; root of context hierarchy
+[INFO] [2018-05-17 18:03:39][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+[INFO] [2018-05-17 18:03:39][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2018-05-17 18:03:39][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-05-17 18:03:39][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 480 ms
+[INFO] [2018-05-17 18:03:39][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherTest': initialization started
+[INFO] [2018-05-17 18:03:39][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'dispatcherTest-servlet': startup date [Thu May 17 18:03:39 CST 2018]; parent: Root WebApplicationContext
+[INFO] [2018-05-17 18:03:39][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcherTest-servlet.xml]
+[INFO] [2018-05-17 18:03:40][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-05-17 18:03:40][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/params/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView www.george.com.controller.MyController.index()
+[INFO] [2018-05-17 18:03:40][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/params/submit],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView www.george.com.controller.MyController.submit(java.lang.String,java.lang.String)
+[INFO] [2018-05-17 18:03:41][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherTest': initialization completed in 1502 ms
