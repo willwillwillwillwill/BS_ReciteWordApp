@@ -6,7 +6,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HomePageController {
-    @RequestMapping("homepage")
+    @RequestMapping("homepage.com")
     public ModelAndView showHomePage(){
         ModelAndView mv = new ModelAndView();
         mv.setViewName("homepage");
