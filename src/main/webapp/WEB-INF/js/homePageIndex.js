@@ -4,7 +4,7 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
       label = $this.prev('label');
 
 	  if (e.type === 'keyup') {
-			if ($this.val() === '') {
+		if ($this.val() === '') {
           label.removeClass('active highlight');
         } else {
           label.addClass('active highlight');
@@ -12,20 +12,21 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
     } else if (e.type === 'blur') {
     	if( $this.val() === '' ) {
     		label.removeClass('active highlight');
-			} else {
+		} else {
 		    label.removeClass('highlight');
-			}
+		}
     } else if (e.type === 'focus') {
 
       if( $this.val() === '' ) {
     		label.removeClass('highlight');
-			}
+	  }
       else if( $this.val() !== '' ) {
 		    label.addClass('highlight');
-			}
+	  }
     }
 
 });
+
 
 $('.tab a').on('click', function (e) {
 
