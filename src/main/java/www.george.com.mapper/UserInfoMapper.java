@@ -6,10 +6,12 @@ import www.george.com.dao.UserInfo;
 
 @Repository
 public interface UserInfoMapper {
-    public int addUser(@Param("firstName") final String firstName,
+     int addUser(@Param("firstName") final String firstName,
                  @Param("lastName") final String lastName,
                  @Param("emailAddr") final String emailAddr,
                  @Param("password") final String password);
 
-    public UserInfo existAccount(@Param("emailAddr") final String emailAddr);
+     UserInfo existAccount(@Param("emailAddr") final String emailAddr);
+
+     void updateAccount(@Param("emailAddr") final String emailAddr);
 }

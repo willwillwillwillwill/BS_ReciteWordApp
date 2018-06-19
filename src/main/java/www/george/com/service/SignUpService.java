@@ -10,10 +10,10 @@ import www.george.com.myEnum.UserState;
 @Service
 public class SignUpService {
     @Autowired
-    UserInfoMapper userInfoMapper;
+    private UserInfoMapper userInfoMapper;
 
     @Autowired
-    EmailService emailService;
+    private EmailService emailService;
 
     public UserState signUp(final String firstName,
                       final String lastName,
@@ -22,7 +22,7 @@ public class SignUpService {
         //首先查询数据库 账号是否存在
         UserInfo userInfo = userInfoMapper.existAccount(emailAddr);
         if (userInfo != null) {
-            if (userInfo.getEmailState().equals(1)){
+            if (userInfo.getEmailState().equals(1L)){
                 return UserState.USER_EXIST_ACTIVE;
             } else {
                 return UserState.USER_EXIST_UN_ACTIVE;
@@ -37,5 +37,12 @@ public class SignUpService {
             e.printStackTrace();
         }
         return UserState.USER_UN_ACTIVE;
+    }
+
+    public boolean activateAccount(final String email) {
+        if(userInfoMapper.existAccount(email) == null)
+            return false;
+        userInfoMapper.updateAccount(email);
+        return true;
     }
 }

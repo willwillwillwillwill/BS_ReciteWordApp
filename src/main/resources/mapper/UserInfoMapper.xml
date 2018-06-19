@@ -13,4 +13,10 @@
         FROM userinfo
         WHERE emailAddr = #{emailAddr}
     </select>
+
+    <update id="updateAccount">
+        UPDATE userinfo
+        SET emailState = 1
+        WHERE emailAddr = #{emailAddr}
+    </update>
 </mapper>
