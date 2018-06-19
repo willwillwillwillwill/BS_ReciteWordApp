@@ -21,9 +21,6 @@ public class SpringMybatisConfigureTest {
     @Autowired
     private BasicDataSource basicDataSource;
 
-    @Autowired
-    private RoleMapper roleMapper;
-
     @Test
     public void testSpringMybatisConfigureTest(){
         Assert.assertNotNull(propertyPlaceholderConfigurer);
