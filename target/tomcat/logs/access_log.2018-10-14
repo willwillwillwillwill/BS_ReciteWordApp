@@ -1,0 +1,6 @@
+127.0.0.1 - - [14/Oct/2018:14:13:29 +0800] "GET /homepage.com HTTP/1.1" 404 - http-bio-9999-exec-1 0
+127.0.0.1 - - [14/Oct/2018:14:13:47 +0800] "GET /ReciteWordApp/homepage.com HTTP/1.1" 404 - http-bio-9999-exec-3 0
+0:0:0:0:0:0:0:1 - - [14/Oct/2018:14:14:37 +0800] "GET /ReciteWebApp/homepage.com HTTP/1.1" 200 2884 http-bio-9999-exec-6 2147
+0:0:0:0:0:0:0:1 - - [14/Oct/2018:14:14:38 +0800] "GET /ReciteWebApp/js/homePageIndex.js HTTP/1.1" 200 992 http-bio-9999-exec-7 71
+0:0:0:0:0:0:0:1 - - [14/Oct/2018:14:14:38 +0800] "GET /ReciteWebApp/css/homePageStyle.css HTTP/1.1" 200 2897 http-bio-9999-exec-8 56
+0:0:0:0:0:0:0:1 - - [14/Oct/2018:14:14:39 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-9999-exec-10 0

@@ -21,7 +21,7 @@ public class EmailService {
         prop.setProperty("mail.smtp.auth", "true");
     }
 
-    private void sendEmail(final String emailAddr) throws Exception{
+    public void sendEmail(final String emailAddr) throws Exception{
         Session session = Session.getInstance(prop);
         session.setDebug(true);
         Transport ts = session.getTransport();
@@ -38,7 +38,7 @@ public class EmailService {
         message.setFrom(new InternetAddress(MAIL_FROM));
         message.setRecipient(Message.RecipientType.TO, new InternetAddress(mailTo));
         message.setSubject("单词背诵账号确认邮件");
-        String content = "确认请点击下述地址：http://localhost:9999/ReciteWebApp/account/" + mailTo;
+        String content = "确认请点击下述地址：http://localhost:9999/ReciteWebApp/account?user=" + mailTo;
         message.setContent(content, "text/html;charset=UTF-8");
         return message;
     }

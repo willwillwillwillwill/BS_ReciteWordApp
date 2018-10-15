@@ -10,10 +10,10 @@ public class AccountController {
     @Autowired
     private SignUpService signUpService;
 
-    @RequestMapping(value = "/html/activate.html", method = RequestMethod.GET)
-    public String activeAccount(@RequestParam(value = "email") String account){
-         if (signUpService.activateAccount(account)){
-             return "activateSuccessful";
-         } else return "activateFailed";
+    @RequestMapping(value = "account", method = RequestMethod.GET)
+    public String activeAccount(@RequestParam(value = "user") String account){
+         signUpService.activateAccount(account);
+
+         return "homepage";
     }
 }

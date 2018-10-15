@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="www.george.com.mapper.WordSetMapper">
+
+
+    <select id="getAllWord" resultType="www.george.com.dao.WordSet">
+        SELECT *
+        FROM
+        <if test="wordSetOrder==1">
+            cet4
+        </if>
+        <if test="wordSetOrder==2">
+            cet6
+        </if>
+        <if test="wordSetOrder==3">
+            GRE
+        </if>
+    </select>
+    <select id="getSingleWord" resultType="www.george.com.dao.WordSet">
+        SELECT *
+        FROM
+        <if test="wordSetOrder==1">
+           cet4
+        </if>
+        <if test="wordSetOrder==2">
+            cet6
+        </if>
+        <if test="wordSetOrder==3">
+            GRE
+        </if>
+        where id = #{id}
+    </select>
+    <select id="getWordSetCount" resultType="int">
+        SELECT count(*)
+        FROM
+        <if test="wordSetOrder==1">
+            cet4
+        </if>
+        <if test="wordSetOrder==2">
+            cet6
+        </if>
+        <if test="wordSetOrder==3">
+            GRE
+        </if>
+
+    </select>
+</mapper>

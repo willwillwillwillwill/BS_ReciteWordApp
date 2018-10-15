@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="www.george.com.mapper.UserWordSetMapper">
+    <select id="getExistWordSet" resultType="Integer">
+        SELECT wordSetOrder
+        FROM userwordset
+        WHERE email = #{email}
+    </select>
+
+    <insert id="insertWord" parameterType="www.george.com.dao.UserWordTable">
+        insert into userwordtable(email,wordSetOrder,wordId,wordStatus) values
+        <foreach collection ="wordList" item="word" separator =",">
+            (#{email}, #{wordSetOrder}, #{word.id},#{wordStatus})
+        </foreach >
+
+    </insert>
+
+    <insert id="insertUserWordSetInfo" parameterType="www.george.com.dao.UserWordSet">
+        insert into userwordset(email,wordSetOrder) values
+        (#{email},#{wordSetOrder})
+    </insert>
+    <select id="getAllWordId" resultType="Integer">
+        SELECT wordId
+        FROM userwordtable
+        where  wordStatus = #{wordStatus} and wordSetOrder = #{wordSetOrder} and email = #{email}
+
+    </select>
+    <update id="updateWord" parameterType="www.george.com.dao.UserWordTable">
+        update userwordtable set wordStatus = #{wordStatus}
+        where email = #{email} and wordId = #{wordId} and wordSetOrder = #{wordSetOrder}
+    </update>
+    <delete id="deleteWordByWordSetOrder">
+        delete from userwordtable where wordSetOrder = #{wordSetOrder} and email = #{email}
+    </delete>
+    <delete id="deleteWordSetInfo">
+        delete from userwordset where wordSetOrder = #{wordSetOrder} and email = #{email}
+    </delete>
+
+    <select id="getWordCount" resultType="int">
+        select count(*)
+        from userwordtable
+        where
+        wordStatus = #{wordStatus} and wordSetOrder = #{wordSetOrder} and email = #{email}
+    </select>
+    <insert id="insertMyBookWord" parameterType="www.george.com.dao.MyWordBook">
+        insert into mywordbook
+        values
+        (#{email},#{wordId},#{wordSetOrder})
+    </insert>
+    <select id="selectAllWordFromMyWordBook" resultType="www.george.com.dao.MyWordBook">
+        select *
+        from mywordbook
+        where email=#{email}
+    </select>
+    <delete id = "deleteMyBookWord">
+        delete from mywordbook
+        where email = #{email} and wordId = #{wordId} and wordSetOrder = #{wordSetOrder}
+    </delete>
+</mapper>
